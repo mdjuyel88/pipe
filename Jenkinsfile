@@ -20,7 +20,4 @@ pipeline {
     }
 
   }
-  environment {
-    helloworld = 'hello'
-  }
 }
