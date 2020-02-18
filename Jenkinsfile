@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'any'
-    }
-
-  }
+  agent none
   stages {
     stage('builed') {
       steps {
@@ -24,5 +19,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    helloworld = 'hello'
   }
 }
